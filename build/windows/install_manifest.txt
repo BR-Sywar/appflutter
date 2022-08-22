@@ -1,0 +1,12 @@
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/ASUS/app/application/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/flutter_assets/assets/1.jpg
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/flutter_assets/assets/2.jpg
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/flutter_assets/assets/3.jpg
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/flutter_assets/assets/4.jpg
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/ASUS/app/application/build/windows/runner/Debug/data/flutter_assets/packages/line_icons/lib/assets/fonts/LineIcons.ttf
