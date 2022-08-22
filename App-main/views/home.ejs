@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+
+</head>
+<body>
+   
+    Temperature :  <h1 class="Temperature"></h1> <br>
+    Puissance :  <h1 class="Puissance"></h1> <br>
+    Courant :  <h1 class="Courant"></h1> <br>
+
+    <script>
+        const socket = io("http://localhost:5000");
+        socket.on('connection')
+        socket.on('Temperature',(data)=>{
+            document.querySelector('.Temperature').innerHTML= data      
+  })
+  socket.on('Courant',(data)=>{
+            document.querySelector('.Courant').innerHTML= data      
+  })
+  socket.on('Puissance',(data)=>{
+            document.querySelector('.Puissance').innerHTML= data      
+  })
+       
+      </script>
+    
+</body>
+</html>
