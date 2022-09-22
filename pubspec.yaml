@@ -34,10 +34,12 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
-  web_socket_channel: ^2.1.0
-  flutter_svg: ^0.19.3
-  http: ^0.13.1
+  flutter_lints: ^ 2.0.1
+  web_socket_channel: ^2.2.0
+  flutter_svg: ^1.1.5
+  retrofit_generator: any
+  json_serializable:  ^6.3.2
+  build_runner: ^2.2.1
 
 
 # For information on the generic Dart part of this file, see the
@@ -57,7 +59,20 @@ flutter:
       - assets/2.jpg
       - assets/3.jpg
       - assets/4.jpg
-dependencies: {collapsible_sidebar: ^2.0.2, email_validator: ^2.1.17, google_fonts: ^3.0.1, line_icons: ^2.0.1, pie_chart: ^5.3.2, shared_preferences: ^2.0.15}
+dependencies: {
+  collapsible_sidebar: ^2.0.2, 
+  email_validator: ^2.1.17,
+  google_fonts: ^3.0.1, 
+  line_icons: ^2.0.1, 
+  pie_chart: ^5.3.2,
+  provider: ^6.0.3 ,
+  http: ^0.13.5,
+  shared_preferences: ^2.0.15 , 
+  flutter_flushbar : ^0.0.2 ,
+  retrofit: any, 
+  dio: ^4.0.6, 
+  json_annotation: any
+  , fluttertoast: ^8.0.9, logger: ^1.1.0}
 
   #   - images/a_dot_ham.jpeg
 

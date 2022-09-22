@@ -6,6 +6,9 @@ const jwt = require ("jsonwebtoken")
 exports.login = async  (req,res ) => {
 const email = req.body.Email
 const pswd = req .body.Password
+
+
+
 const existe =await User.findOne({Email:email})
 console.log(existe);
     try {

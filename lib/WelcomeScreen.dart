@@ -1,8 +1,9 @@
+import 'package:application/controllers/globalController.dart';
 import 'package:flutter/material.dart';
 
 import 'items.dart';
 
-import 'LoginScreen/login.dart';
+import 'LoginScreen/page/login.dart';
 
 class WelcomeScreen extends StatefulWidget {
   @override
@@ -71,6 +72,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   double currentPage = 0.0;
   final _pageViewController = PageController();
 
+  GlobalController globalController = GlobalController();
+
   @override
   void initState() {
     super.initState();
@@ -90,11 +93,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           actions: <Widget>[
             IconButton(
                 icon: Icon(Icons.settings),
-                onPressed: () {
-                  Navigator.push(
-                      context,
+                onPressed: () async{
+                //  await globalController.getAllData();
+                 Navigator.push(
+                     context,
                       MaterialPageRoute(
-                          builder: (context) => Login(title: "login",)));
+                          builder: (context) => Login()));
                 }),
           ]),
       body: Container(

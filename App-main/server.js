@@ -47,18 +47,21 @@ io.on('connection',(socket)=>{
   
    let  Data = await  data.find()
     console.log(Data);
-    Data.map((val)=>{
+    Data.map((val)=>{ 
     
       
-        socket.emit('Puissance', val.Puissance);
-        socket.emit('Tension', val.Tension);
-        socket.emit('Courant', val.Courant);
-        socket.emit('Temperature', val.Temperature);
+        socket.emit('puissance', val.puissance);
+        socket.emit('tension', val.tension);
+        socket.emit('courant', val.courant);
+        socket.emit('temperature', val.temperature);
 
        console.log(val)
 
      
     })
+
+
+    
   });
 
   
@@ -67,5 +70,9 @@ io.on('connection',(socket)=>{
 
 })
 
+
+
+
 const port =5000
 server.listen(port,()=>{console.log(`server run sur ${port}`) })
+

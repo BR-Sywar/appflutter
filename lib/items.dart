@@ -1,8 +1,7 @@
 List items = [
   {
     "header": "Learn",
-    "description":
-        "A photovoltaic cell, or solar cell, is an electronic component that, when exposed to light, produces electricity through the photovoltaic effect. The electrical power obtained is proportional to the incident light power and depends on the efficiency of the cell.",
+    "description": "" ,
     "image": "assets/1.jpg"
   },
   {

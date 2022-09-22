@@ -1,14 +1,12 @@
 const mongoose=require('mongoose')
 const data = new mongoose.Schema({
-    Puissance : Number   ,
-    Tension : Number ,
-    Courant : Number ,
-    Temperature : Number ,
-   
+    puissance : Number   ,
+    tension : Number ,
+    courant : Number ,
+    temperature : Number ,
+   date : Date ,
 
 } ,
-{
-    timestamps: true,
-  })
+)
 
 module.exports = mongoose.model("data", data)
