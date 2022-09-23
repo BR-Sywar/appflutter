@@ -7,7 +7,6 @@ const data= async()=>{
         {
             useNewUrlParser : true , 
             useUnifiedTopology : true , 
-              
          },
          async(error)=>{
              if (error)

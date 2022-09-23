@@ -18,7 +18,7 @@ class GlobalController{
 
 
   Future<HistoryModel?> getAllData()async{
-    http.Response response = await http.get(Uri.parse('http://127.0.0.1:5000/user/Historique'),
+    http.Response response = await http.get(Uri.parse('http://192.168.1.15:5000/user/Historique'),
 
    headers: {
     
@@ -33,7 +33,7 @@ class GlobalController{
     
     );
 
-
+log(response.body);
 
 
     if (response.statusCode == 200){

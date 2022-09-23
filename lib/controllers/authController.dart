@@ -31,6 +31,8 @@ Future<void> signUp(BuildContext context,String email,String password,String nom
       "Prenom" : prenom ,
     });
 
+    log("${response.statusCode}");
+
     if (response.statusCode == 200){
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: ((context) => Dashbord())));
     }

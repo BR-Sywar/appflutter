@@ -61,8 +61,7 @@ void updatepassword ( val ) {
     SharedPreferences preferences = await SharedPreferences.getInstance();
     var url = Uri.parse(ApiConstants.baseUrl + ApiConstants.log);
 log(myController.text);    
-    final response = await http
-        .post(url, body: {
+    final response = await http.post(url, body: {
       "Email": _productName,
       "Password": _password,
     });
