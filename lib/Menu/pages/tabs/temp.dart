@@ -25,7 +25,7 @@ class Temperature extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("${DateTime.now().day}/${DateTime.now().month}/${DateTime.now().year}",style: Theme.of(context).textTheme.headline6,),
+           //   child: Text("${DateTime.now().day}/${DateTime.now().month}/${DateTime.now().year}",style: Theme.of(context).textTheme.headline6,),
             ),
             Expanded(
               child: ListView.builder(
@@ -64,7 +64,7 @@ class Temperature extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("${snapshot.data!.response![index].temperature} W"),
+                                Text("${snapshot.data!.response![index].temperature} °C"),
                                 Text("${snapshot.data!.response![index].date}")
                               ],
                             ),

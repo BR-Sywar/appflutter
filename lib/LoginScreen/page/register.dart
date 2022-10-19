@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:developer';
+import 'dart:ui';
 import 'package:application/constants.dart';
 import 'package:application/Menu/pages/menu.dart';
 import 'package:application/controllers/authController.dart';
@@ -125,28 +126,27 @@ void updatePrenom ( val ) {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
-          appBar: AppBar(
-            title: const Text("App"),
-            backgroundColor: Color.fromARGB(255, 58, 62, 70),
-          ),
-          backgroundColor: Colors.white,
-          body: Container(
-            padding: const EdgeInsets.all(20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                const Text(
-                  'Sign up',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 40,
-                    color: Color.fromARGB(255, 96, 101, 110),
-                  ),
-                ),
-                const SizedBox(
-                  height: 60,
-                ),
+         
+            
+      body: Container(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            const Text(
+              'Registre',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                   color: Color.fromARGB(255, 96, 101, 110),
+
+                fontSize: 40,
+              ),
+            ),
+             const SizedBox(
+                        height: 30,
+                      ),
+              
                 Form(
                   key: _formKey,
                   child: Column(
@@ -172,8 +172,8 @@ void updatePrenom ( val ) {
                           ),
                           const SizedBox(
                             width: 20,
-                          ),
-                          Expanded(
+                          )
+,                          Expanded(
                             child: TextFormField(
                               maxLines: 1,
                               controller: prenomController,
@@ -193,7 +193,7 @@ void updatePrenom ( val ) {
                         ],
                       ),
                       const SizedBox(
-                        height: 20,
+                        height: 10,
                       ),
                       TextFormField(
                         maxLines: 1,
@@ -203,7 +203,7 @@ void updatePrenom ( val ) {
                               
                             } , 
                           decoration: InputDecoration(
-                          hintText: 'Enter your email',
+                          hintText: 'Entrer votre  email',
                           prefixIcon: const Icon(Icons.email),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
@@ -211,12 +211,12 @@ void updatePrenom ( val ) {
                         ),
                       ),
                       const SizedBox(
-                        height: 20,
+                        height: 10,
                       ),
                       TextFormField(
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Please enter your password';
+                            return ' Le mot de passe est erroné.';
                           }
                           return null;
                         },
@@ -230,43 +230,43 @@ void updatePrenom ( val ) {
                         obscureText: true,
                         decoration: InputDecoration(
                           prefixIcon: const Icon(Icons.lock),
-                          hintText: 'Enter your password',
+                          hintText: 'Entrer votre mot de passe',
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
                         ),
                       ),
                       const SizedBox(
-                        height: 20,
+                        height: 30,
                       ),
                       ElevatedButton(
+                        
                         onPressed: ()async {
                           // await globalController.getAllData();
 
                           await authController.signUp(context, emailController.text, passwordController.text, nomController.text, prenomController.text);
 
-
-
-                         
-                          
                         },
                         style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.fromLTRB(40, 15, 40, 15),
+                        
                         ),
+                        
                         child: const Text(
-                          'Sign up',
+                          'Registre',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+
                           ),
                         ),
                       ),
                       const SizedBox(
-                        height: 20,
+                        height: 10,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Text('Already registered?'),
+                          const Text('Déjà enregistré?'),
                           TextButton(
                             onPressed: () {
                               Navigator.pushReplacement(
@@ -277,7 +277,7 @@ void updatePrenom ( val ) {
                                 ),
                               );
                             },
-                            child: const Text(('Sign in')),
+                            child: const Text(('Login')),
                           ),
                         ],
                       ),

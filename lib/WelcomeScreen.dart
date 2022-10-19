@@ -13,7 +13,6 @@ class WelcomeScreen extends StatefulWidget {
 class _WelcomeScreenState extends State<WelcomeScreen> {
   List<Widget> slides = items
       .map((item) => Container(
-          padding: const EdgeInsets.symmetric(horizontal: 18.0),
           child: Column(
             children: <Widget>[
               Flexible(
@@ -21,16 +20,14 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 fit: FlexFit.tight,
                 child: Image.asset(
                   item['image'],
-                  fit: BoxFit.fitWidth,
-                  width: 220.0,
-                  alignment: Alignment.bottomCenter,
+                  fit: BoxFit.contain,
+                  width: 3000,
                 ),
               ),
               Flexible(
                 flex: 1,
                 fit: FlexFit.tight,
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 30.0),
                   child: Column(
                     children: <Widget>[
                       Text(item['header'],
@@ -39,7 +36,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                               fontWeight: FontWeight.w300,
                               color: Color(0XFF3F3D56),
                               height: 2.0)),
-                      Text(
+                       Text(
                         item['description'],
                         style: const TextStyle(
                             color: Colors.grey,
@@ -92,7 +89,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           backgroundColor: Color.fromARGB(255, 58, 62, 70),
           actions: <Widget>[
             IconButton(
-                icon: Icon(Icons.settings),
+                icon: Icon(Icons.login),
                 onPressed: () async{
                 //  await globalController.getAllData();
                  Navigator.push(

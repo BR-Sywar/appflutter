@@ -21,7 +21,7 @@ class Courant extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("${DateTime.now().day}/${DateTime.now().month}/${DateTime.now().year}",style: Theme.of(context).textTheme.headline6,),
+               // child: Text("${DateTime.now().day}/${DateTime.now().month}/${DateTime.now().year}",style: Theme.of(context).textTheme.headline6,),
             ),
             Expanded(
               child: ListView.builder(

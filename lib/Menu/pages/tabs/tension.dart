@@ -22,7 +22,7 @@ class Tension extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("${DateTime.now().day}/${DateTime.now().month}/${DateTime.now().year}",style: Theme.of(context).textTheme.headline6,),
+            // child: Text("${DateTime.now().day}/${DateTime.now().month}/${DateTime.now().year}",style: Theme.of(context).textTheme.headline6,),
             ),
             Expanded(
               child: ListView.builder(
@@ -31,7 +31,8 @@ class Tension extends StatelessWidget {
                 itemBuilder: (context, index){
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Container(
+                    child: 
+                    Container(
             
                       // margin: EdgeInsets.symmetric(horizontal: 10),
             
@@ -61,8 +62,8 @@ class Tension extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("${snapshot.data!.response![index].courant} W"),
-                                Text("${snapshot.data!.response![index].tension}")
+                                Text("${snapshot.data!.response![index].tension} V"),
+                                Text("${snapshot.data!.response![index].date}")
                               ],
                             ),
                           ],

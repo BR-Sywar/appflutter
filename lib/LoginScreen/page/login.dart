@@ -3,6 +3,8 @@ import 'dart:developer';
 import 'package:application/Menu/pages/menu.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:pie_chart/pie_chart.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../constants.dart';
 import 'register.dart';
@@ -58,34 +60,41 @@ void updatepassword ( val ) {
 
 
   login() async {
+
+  WidgetsFlutterBinding.ensureInitialized();
+
     SharedPreferences preferences = await SharedPreferences.getInstance();
+ preferences.setBool("isLoggedIn", true);
+
     var url = Uri.parse(ApiConstants.baseUrl + ApiConstants.log);
-log(myController.text);    
+      log(myController.text);    
     final response = await http.post(url, body: {
       "Email": _productName,
       "Password": _password,
-    });
-
+      
+    } );
     
-
     if (response.statusCode == 200) {
+      //  runApp(MaterialApp(home: login == null ? login() : Dashbord()));
+
        Navigator.pushReplacement(
           context,
           MaterialPageRoute(
               builder: (context) => Dashbord()),
         );
+
         final data = jsonDecode(response.body);
     String auth_token = data['token'];
       setState(() {
        
         savePref(auth_token);
       });
-      loginToast("Login Sucessfull");
+      loginToast("Connexion réussie");
     } else if (response.statusCode == 400){
-      loginToast("Email or password is not correct");
+      loginToast("Email ou mot de passe incorrects ");
     }
     else {
-      loginToast("Login Failed");
+      loginToast("Échec de la connexion");
     }
   }
 
@@ -97,7 +106,7 @@ log(myController.text);
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIosWeb: 3,
-        backgroundColor: toast == "Login Sucessfull" ?  Color.fromARGB(255, 47, 49, 53): Color.fromARGB(255, 58, 62, 70),
+        backgroundColor: toast == "Connexion réussie" ?  Color.fromARGB(255, 47, 49, 53): Color.fromARGB(255, 58, 62, 70),
  
         textColor: Colors.white);
   }
@@ -139,6 +148,7 @@ log(myController.text);
         ),
         home :Scaffold(
 
+         
       body: Container(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -146,14 +156,17 @@ log(myController.text);
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Sign in',
+              'Login',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
+                   color: Color.fromARGB(255, 96, 101, 110),
+
                 fontSize: 40,
               ),
             ),
+            
             const SizedBox(
-              height: 60,
+              height: 30,
             ),
             Form(
               key: _formKey,
@@ -162,14 +175,14 @@ log(myController.text);
                   TextFormField(
                     validator: (value) => EmailValidator.validate(value!)
                         ? null
-                        : "Please enter a valid email",
+                        : " vérifier votre email",
                     maxLines: 1,
+
                     onChanged : ( val ) {
-  updateText ( val ) ;
-   
-} , 
+                              updateText ( val ) ;
+                            } , 
                     decoration: InputDecoration(
-                      hintText: 'Enter your email',
+                      hintText: 'Entrer votre email',
                       prefixIcon  : const Icon(Icons.email),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -183,7 +196,7 @@ log(myController.text);
                   TextFormField(
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter your password';
+                        return 'Vérifier votre mot de passe';
                       }
                       return null;
                     },
@@ -196,7 +209,7 @@ onChanged : ( val ) {
                     obscureText: true,
                     decoration: InputDecoration(
                       prefixIcon: const Icon(Icons.lock),
-                      hintText: 'Enter your password',
+                      hintText: 'Entrer votre mot de passe',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -207,6 +220,7 @@ onChanged : ( val ) {
                     height: 20,
                   ),
                   ElevatedButton(
+
                     onPressed: () {
 
                       login();/*
@@ -222,10 +236,12 @@ onChanged : ( val ) {
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.fromLTRB(40, 15, 40, 15),
                     ),
+                    
                     child: const Text(
-                      'Sign in',
+                      'Login',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        
                       ),
                     ),
                   ),
@@ -235,7 +251,7 @@ onChanged : ( val ) {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text('Not registered yet?'),
+                      const Text("Tu n'a pas encore compté ? " ),
                       TextButton(
                         onPressed: () {
                           Navigator.pushReplacement(
@@ -246,7 +262,7 @@ onChanged : ( val ) {
                             ),
                           );
                         },
-                        child: const Text('Create an account'),
+                        child: const Text('Créer un compte'),
                       ),
                     ],
                   ),

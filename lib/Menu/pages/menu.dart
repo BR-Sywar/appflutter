@@ -4,24 +4,33 @@ import 'package:application/LoginScreen/model/historyModel.dart';
 import 'package:application/Menu/pages/Historique.dart';
 import 'package:application/WelcomeScreen.dart';
 import 'package:application/controllers/globalController.dart';
+import 'package:application/main.dart';
 import 'package:collapsible_sidebar/collapsible_sidebar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:logger/logger.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../LoginScreen/page/login.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 
 class Dashbord extends StatefulWidget {
   const Dashbord({Key? key}) : super(key: key);
 
   @override
   State<Dashbord> createState() => _DashbordState();
-
+ 
 
 }
 
 class _DashbordState extends State<Dashbord> {
 
+
   GlobalController globalController = GlobalController();
+  
+ 
+
 
   @override
 
@@ -90,7 +99,7 @@ class _DashbordState extends State<Dashbord> {
                     child: Container(
                       padding: const EdgeInsets.all(30),
                       child: Text(
-                        '${snapshot.data!.response!.last.tension} W',
+                        '${snapshot.data!.response!.last.tension} V',
                         style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                       ),
                     ),
@@ -111,7 +120,7 @@ class _DashbordState extends State<Dashbord> {
                     child: Container(
                       padding: const EdgeInsets.all(30),
                       child: Text(
-                        '${snapshot.data!.response!.last.courant} W',
+                        '${snapshot.data!.response!.last.courant} A',
                         style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                       ),
                     ),
@@ -132,7 +141,7 @@ class _DashbordState extends State<Dashbord> {
                     child: Container(
                       padding: const EdgeInsets.all(30),
                       child: Text(
-                        '${snapshot.data!.response!.last.temperature} W',
+                        '${snapshot.data!.response!.last.temperature} °C',
                         style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                       ),
                     ),
@@ -185,13 +194,23 @@ class SideDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Logout'),
-            onTap: () => {Navigator.of(context).push(MaterialPageRoute(builder: (_)=>WelcomeScreen()))},
+             onTap: 
+              () async {SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.clear();
+                Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(builder: (c) => WelcomeScreen()),
+                    (r) => false);
+              },
+             
+
+
           ),
         ],
       ),
     );
-  }
   
+
+  }
 }
 
 

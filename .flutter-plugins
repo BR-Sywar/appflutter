@@ -1,4 +1,8 @@
 # This is a generated file; do not edit or check into version control.
+firebase_auth=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_auth-3.11.0\\
+firebase_auth_web=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_auth_web-4.6.0\\
+firebase_core=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core-1.24.0\\
+firebase_core_web=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\firebase_core_web-1.7.3\\
 fluttertoast=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\fluttertoast-8.0.9\\
 path_provider=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider-2.0.11\\
 path_provider_android=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_android-2.0.17\\
@@ -7,7 +11,7 @@ path_provider_linux=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\fl
 path_provider_macos=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_macos-2.0.6\\
 path_provider_windows=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_windows-2.1.1\\
 shared_preferences=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-2.0.15\\
-shared_preferences_android=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_android-2.0.12\\
+shared_preferences_android=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_android-2.0.13\\
 shared_preferences_ios=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_ios-2.1.1\\
 shared_preferences_linux=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_linux-2.1.1\\
 shared_preferences_macos=C:\\Users\\ASUS\\Downloads\\flutter_windows_3.3.1-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_macos-2.0.4\\

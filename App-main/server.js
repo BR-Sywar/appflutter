@@ -30,9 +30,7 @@ db()
 app.use("/user",router)
 app.use(express.static('public'))
 
-app.get("/",(req,res)=>{
-res.send("bonjour a tous")
-})
+
 app.get('/home',  async (req, res) => {
   res.render("home")
 });

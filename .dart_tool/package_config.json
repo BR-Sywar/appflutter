@@ -164,6 +164,42 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "firebase_auth",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-3.11.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_auth_platform_interface",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_platform_interface-6.10.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_auth_web",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-4.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_core",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.24.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_core_platform_interface",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_platform_interface-4.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "firebase_core_web",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.7.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
       "name": "fixnum",
       "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-1.0.1",
       "packageUri": "lib/",
@@ -218,6 +254,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "get",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/get-4.6.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "get_storage",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/get_storage-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "glob",
       "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/glob-2.1.0",
       "packageUri": "lib/",
@@ -250,6 +298,12 @@
     {
       "name": "http_parser",
       "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "intl",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -477,7 +531,7 @@
     },
     {
       "name": "shared_preferences_android",
-      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_android-2.0.12",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_android-2.0.13",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -501,7 +555,7 @@
     },
     {
       "name": "shared_preferences_platform_interface",
-      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_platform_interface-2.0.0",
+      "rootUri": "file:///C:/Users/ASUS/Downloads/flutter_windows_3.3.1-stable/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_platform_interface-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -656,7 +710,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-09-22T21:59:18.196314Z",
+  "generated": "2022-10-02T10:12:05.527655Z",
   "generator": "pub",
   "generatorVersion": "2.18.1"
 }
