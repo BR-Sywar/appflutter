@@ -29,6 +29,8 @@ class Tension extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 itemCount: snapshot.data!.response!.length,
                 itemBuilder: (context, index){
+                  int itemCount = snapshot.data!.response!.length  ;
+                   int reversedIndex = itemCount - 1 - index;
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: 
@@ -62,8 +64,8 @@ class Tension extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("${snapshot.data!.response![index].tension} V"),
-                                Text("${snapshot.data!.response![index].date}")
+                                Text("${snapshot.data!.response![reversedIndex].tension} V"),
+                                Text("${snapshot.data!.response![reversedIndex].date}")
                               ],
                             ),
                           ],

@@ -18,7 +18,7 @@ class Historique extends StatelessWidget {
           appBar: AppBar( 
 
           title: Text("Historique"),
-          backgroundColor: Color.fromARGB(255, 58, 62, 70),
+          backgroundColor: Color.fromARGB(255, 0, 0, 0),
         
             bottom: const TabBar(
               tabs: [

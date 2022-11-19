@@ -8,6 +8,7 @@ import 'LoginScreen/page/login.dart';
 class WelcomeScreen extends StatefulWidget {
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
+
 }
 
 class _WelcomeScreenState extends State<WelcomeScreen> {
@@ -127,3 +128,5 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     );
   }
 }
+
+

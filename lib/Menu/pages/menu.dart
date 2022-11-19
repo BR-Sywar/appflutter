@@ -13,6 +13,10 @@ import 'package:logger/logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../LoginScreen/page/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'dart:async';
+import 'dart:io';
+import 'package:mqtt_client/mqtt_client.dart';
+import 'package:mqtt_client/mqtt_server_client.dart';
 
 
 class Dashbord extends StatefulWidget {
@@ -26,10 +30,25 @@ class Dashbord extends StatefulWidget {
 
 class _DashbordState extends State<Dashbord> {
 
-
   GlobalController globalController = GlobalController();
-  
- 
+
+  late Timer _timer;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _timer = Timer.periodic(Duration(seconds: 1), (timer){
+     
+      setState(() {
+        
+      });
+      
+
+    });
+  }
+
+
 
 
   @override
@@ -49,7 +68,7 @@ class _DashbordState extends State<Dashbord> {
             builder: (context, snapshot) {
               return 
 
-             ! snapshot.hasData?
+             !snapshot.hasData?
 
              Center(child: CircularProgressIndicator()):
               

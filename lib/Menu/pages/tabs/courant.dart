@@ -28,6 +28,8 @@ class Courant extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 itemCount: snapshot.data!.response!.length,
                 itemBuilder: (context, index){
+                  int itemCount = snapshot.data!.response!.length  ;
+                   int reversedIndex = itemCount - 1 - index;
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
@@ -60,8 +62,8 @@ class Courant extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("${snapshot.data!.response![index].courant} W"),
-                                Text("${snapshot.data!.response![index].date}")
+                                Text("${snapshot.data!.response![reversedIndex].courant} W"),
+                                Text("${snapshot.data!.response![reversedIndex].date}")
                               ],
                             ),
                           ],

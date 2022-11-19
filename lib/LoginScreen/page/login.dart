@@ -27,9 +27,9 @@ class _LoginPageState extends State<Login> {
 
   final _formKey = GlobalKey<FormState>();
   final _key = new GlobalKey<FormState>();
-
-
-final myController = TextEditingController() ;
+  final myController = TextEditingController() ;
+  
+ 
 @override
   void dispose() {
     // Clean up the controller when the widget is disposed.

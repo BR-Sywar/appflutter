@@ -4,7 +4,7 @@ const data = new mongoose.Schema({
     tension : Number ,
     courant : Number ,
     temperature : Number ,
-   date : Date ,
+   date : String ,
 
 } ,
 )

@@ -18,23 +18,16 @@ class GlobalController{
 
 
   Future<HistoryModel?> getAllData()async{
-    http.Response response = await http.get(Uri.parse('http://192.168.1.15:5000/user/Historique'),
+    http.Response response = await http.get(Uri.parse('http://192.168.0.3:5000/user/Historique'),
 
    headers: {
     
     'Content-Type': 'application/json; charset=UTF-8',
-
-   
-   
    }
-    
-    
-    
-    
+  
     );
 
-log(response.body);
-
+log("${response.statusCode}");
 
     if (response.statusCode == 200){
       return HistoryModel.fromJson(json.decode(response.body));

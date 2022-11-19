@@ -3,18 +3,15 @@ const data = require ("../model/data")
 const moment = require("moment")
 exports.Historique = async (req,res) => {
 
-      
-    
-     
       try{
  
          let tab =[]
        let resultat = await data.find({})
-       const resul = JSON.parse(JSON.stringify(resultat));
-
-       resul.map(async (elem)=> {
-        elem.date =  moment(new Date (elem.date)).format('M/D/Y, h:mm:ss a');
-console.log(elem.date)
+      // const resul = JSON.parse(JSON.stringify(resultat));
+console.log(resultat)
+       resultat.map(async (elem)=> {
+        elem.date =  elem.date ;
+//console.log(elem.puissance)
 
         tab.push(elem)
         })

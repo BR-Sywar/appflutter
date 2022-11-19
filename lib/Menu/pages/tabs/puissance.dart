@@ -14,6 +14,7 @@ class Puissance extends StatelessWidget {
     return FutureBuilder<HistoryModel?>(
       future: globalController.getAllData(),
       builder: (context, snapshot) {
+       
         return
         !snapshot.hasData?
         Center(child: CircularProgressIndicator(),):
@@ -28,9 +29,12 @@ class Puissance extends StatelessWidget {
             ),
             Expanded(
               child: ListView.builder(
+                
                 padding: EdgeInsets.zero,
                 itemCount: snapshot.data!.response!.length,
                 itemBuilder: (context, index){
+                   int itemCount = snapshot.data!.response!.length  ;
+                   int reversedIndex = itemCount - 1 - index;
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
@@ -63,8 +67,8 @@ class Puissance extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("${snapshot.data!.response![index].puissance} A"),
-                                Text("${snapshot.data!.response![index].date}")
+                                Text("${snapshot.data!.response![reversedIndex].puissance} A"),
+                                Text("${snapshot.data!.response![reversedIndex].date}")
                               ],
                             ),
                           ],

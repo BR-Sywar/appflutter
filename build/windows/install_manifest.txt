@@ -1,0 +1,15 @@
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/assets/1.jpg
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/assets/2.jpg
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/assets/3.jpg
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/assets/4.jpg
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/packages/fluttertoast/assets/toastify.css
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/packages/fluttertoast/assets/toastify.js
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/packages/line_icons/lib/assets/fonts/LineIcons.ttf
+C:/Users/ASUS/Desktop/appflutter/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
